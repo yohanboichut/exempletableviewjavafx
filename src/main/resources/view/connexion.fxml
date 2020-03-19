@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Connexion">
+<top>
+            <Label text="Connexion" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <GridPane prefHeight="160.0" prefWidth="280.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="120.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="120.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="243.0" minHeight="10.0" prefHeight="243.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Saisir login" />
+                  <TextField fx:id="login" GridPane.columnIndex="1" />
+                  <Label text="Saisir mot de passe" GridPane.rowIndex="1" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Button fx:id="connexion" mnemonicParsing="false" onAction="#clic" prefHeight="25.0" prefWidth="91.0" text="Connexion">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="quitter" mnemonicParsing="false" onAction="#clic" prefHeight="25.0" prefWidth="87.0" text="Quitter" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets top="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <TextField fx:id="password" prefHeight="25.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </center>
+         <right>
+            <Pane prefHeight="165.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+         </right>
+         <left>
+            <Pane prefHeight="165.0" prefWidth="128.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>

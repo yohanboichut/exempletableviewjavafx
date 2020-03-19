@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="root" alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Menu">
+   <children>
+      <Label text="Menu">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="50.0" />
+         </VBox.margin>
+      </Label>
+
+            <Hyperlink mnemonicParsing="false" onAction="#matchsOuverts" text="Gérer matchs ouverts aux paris" />
+            <Hyperlink mnemonicParsing="false" onAction="#deconnexion" text="Deconnexion" />
+
+   </children>
+</VBox>
